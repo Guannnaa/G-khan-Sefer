@@ -2,9 +2,11 @@
 
 ## 1. Project Overview
 
-This project is a **Web-based Geographic Information System (WebGIS)** developed as part of the course requirements. The system allows users to create, manage, and analyze spatial incident reports through a role-based architecture. The application demonstrates the use of spatial databases, RESTful APIs, authentication, authorization, and performance analysis techniques.
+This project is a **Web-based Geographic Information System (WebGIS)** developed as part of the course requirements and designed as a prototype system for **Keçiören Municipality**. The primary purpose of the system is to enable faster, more efficient reporting and management of road and sidewalk damages (such as potholes, cracks, and surface deformations) within the district.
 
-The main goal of the project is to design a functional WebGIS application that supports spatial data operations, team management, and performance evaluation without relying on external map servers or third-party APIs.
+Through this system, citizens can directly report infrastructure problems by marking their exact locations on an interactive map. Municipal workers can update repair statuses, while managers can assign available teams to reported incidents. This workflow helps the municipality receive damage notifications more quickly, prioritize maintenance tasks, and coordinate repair teams effectively.
+
+In addition to its practical motivation, the project demonstrates core WebGIS concepts including spatial data handling, role-based authorization, RESTful API development, spatial indexing, and performance analysis. The application was intentionally developed without external map servers or third-party APIs to highlight full control over spatial data and system performance.
 
 ---
 
@@ -26,8 +28,14 @@ All components run locally and communicate through RESTful HTTP requests.
 The system supports role-based access control with three user types:
 
 * **User:** Can create spatial incident reports and view reports.
+* <img width="1839" height="962" alt="image" src="https://github.com/user-attachments/assets/2c93cdf1-e0bb-4241-bcf8-acf4c9bd6ca4" />
+
 * **Worker:** Can update the status of assigned reports.
+* <img width="1833" height="961" alt="image" src="https://github.com/user-attachments/assets/b5493591-388d-4cd5-8a7c-360ba7c52893" />
+
 * **Manager:** Can assign teams to reports, manage teams, and delete reports.
+* <img width="1838" height="958" alt="image" src="https://github.com/user-attachments/assets/bc343443-26c3-449b-8161-cf16471fe4c0" />
+
 
 Authentication is handled using **JWT (JSON Web Tokens)**, ensuring secure access to protected endpoints.
 
@@ -88,6 +96,7 @@ Swagger UI is available at:
 ```
 http://localhost:3000/api-docs
 ```
+<img width="1852" height="922" alt="image" src="https://github.com/user-attachments/assets/e0ed14c9-eea6-42c9-9d55-9cbc85b03e51" />
 
 ---
 
@@ -110,6 +119,7 @@ A **GiST spatial index** was created on the geometry column of the `reports` tab
 
 * Sequential Scan
 * Higher execution time
+<img width="1907" height="1022" alt="Ekran görüntüsü 2026-01-14 174300" src="https://github.com/user-attachments/assets/d5e3c83c-3038-4436-b005-7c868983b397" />
 
 ### Query With Index:
 
@@ -117,6 +127,7 @@ A **GiST spatial index** was created on the geometry column of the `reports` tab
 * Significantly reduced execution time
 
 The experiment demonstrates the performance improvement achieved by spatial indexing.
+<img width="1915" height="1020" alt="Ekran görüntüsü 2026-01-14 174332" src="https://github.com/user-attachments/assets/c61d83e0-78a0-4306-9d36-4003116f0ab5" />
 
 ---
 
@@ -127,6 +138,7 @@ Performance testing was conducted using **Artillery**.
 Load tests simulated multiple concurrent users accessing the API endpoints. Metrics such as response time, request rate, and error rates were analyzed.
 
 The results confirm that the system can handle concurrent requests efficiently under load.
+<img width="946" height="763" alt="Ekran görüntüsü 2026-01-14 182430" src="https://github.com/user-attachments/assets/fcfd4304-7d92-4d7a-bfd4-b22d98f954cc" />
 
 ---
 
@@ -164,3 +176,4 @@ This project successfully demonstrates the development of a WebGIS application w
 ## 14. Author
 
 **Engin Gökhan Sefer**
+
