@@ -1,4 +1,4 @@
-# WebGIS Incident Management System
+<img width="1839" height="965" alt="image" src="https://github.com/user-attachments/assets/daaf7fb9-516d-4420-9a7c-d63705ec650d" /><img width="1839" height="965" alt="image" src="https://github.com/user-attachments/assets/4765b34d-e71d-43a4-91ec-f78915278ec8" /># WebGIS Incident Management System
 
 ## 1. Project Overview
 
@@ -7,9 +7,11 @@ This project is a **Web-based Geographic Information System (WebGIS)** developed
 Through this system, citizens can directly report infrastructure problems by marking their exact locations on an interactive map. Municipal workers can update repair statuses, while managers can assign available teams to reported incidents. This workflow helps the municipality receive damage notifications more quickly, prioritize maintenance tasks, and coordinate repair teams effectively.
 
 In addition to its practical motivation, the project demonstrates core WebGIS concepts including spatial data handling, role-based authorization, RESTful API development, spatial indexing, and performance analysis. The application was intentionally developed without external map servers or third-party APIs to highlight full control over spatial data and system performance.
-![Uploading image.png…]()
+
+
 
 ---
+
 
 ## 2. System Architecture
 
@@ -27,6 +29,7 @@ All components run locally and communicate through RESTful HTTP requests.
 ## 3. User Roles and Authorization
 
 The system supports role-based access control with three user types:
+<img width="1839" height="965" alt="image" src="https://github.com/user-attachments/assets/0f639016-5952-4892-b9cc-df614ef49d00" />
 
 * **User:** Can create spatial incident reports and view reports.
 * <img width="1839" height="962" alt="image" src="https://github.com/user-attachments/assets/2c93cdf1-e0bb-4241-bcf8-acf4c9bd6ca4" />
