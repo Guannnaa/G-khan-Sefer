@@ -1,4 +1,4 @@
-<img width="1839" height="965" alt="image" src="https://github.com/user-attachments/assets/daaf7fb9-516d-4420-9a7c-d63705ec650d" /><img width="1839" height="965" alt="image" src="https://github.com/user-attachments/assets/4765b34d-e71d-43a4-91ec-f78915278ec8" /># WebGIS Incident Management System
+
 
 ## 1. Project Overview
 
