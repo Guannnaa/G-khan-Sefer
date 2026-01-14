@@ -7,6 +7,7 @@ This project is a **Web-based Geographic Information System (WebGIS)** developed
 Through this system, citizens can directly report infrastructure problems by marking their exact locations on an interactive map. Municipal workers can update repair statuses, while managers can assign available teams to reported incidents. This workflow helps the municipality receive damage notifications more quickly, prioritize maintenance tasks, and coordinate repair teams effectively.
 
 In addition to its practical motivation, the project demonstrates core WebGIS concepts including spatial data handling, role-based authorization, RESTful API development, spatial indexing, and performance analysis. The application was intentionally developed without external map servers or third-party APIs to highlight full control over spatial data and system performance.
+![Uploading image.png…]()
 
 ---
 
